@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+         
           Learn React
-        </a>
+        </a> 
+        <button type="button" className="btn btn-primary rounded-3"> Primary </button> 
       </header>
     </div>
   );
