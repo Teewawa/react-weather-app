@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import SearchEngine from "./SearchEngine";
+
 
 function App() {
+  let [data, setData] = useState(null);
+
+  //Receives weather data
+  function receiveData(response){
+    console.log("app.js", response)
+    setData(response);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-         
-          Learn React
-        </a> 
-        <button type="button" className="btn btn-primary rounded-3"> Primary </button> 
+      <header className="App-header">         
+        <SearchEngine onSubmit={receiveData}/>
+
       </header>
     </div>
   );
