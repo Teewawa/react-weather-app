@@ -1,6 +1,29 @@
 .App {
   text-align: center;
   font-family: "serif", serif;
+  background-color: #282c34;
+}
+
+.weather-container {
+  margin: 0 auto;
+  max-width: 900px;
+  margin-top: 6vh;
+}
+
+.card.bg-card-left {
+  background-color: rgba(247, 244, 245, 0.6);
+}
+
+#search-input {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.005);
+  border-radius: 3px;
+  width: 95%;
+  max-width: 200px;
+  background-image: url("/public/images/searchicon.png");
+  background-size: 33px;
+  background-repeat: no-repeat;
+  padding: 5px 10px 5px 40px;
 }
 
 .App-logo {
