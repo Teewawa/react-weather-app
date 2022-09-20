@@ -14,10 +14,26 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">         
-        <SearchEngine onSubmit={receiveData}/>
+        {/*The outer layer of each component is built utilizing
+        bootstrap for a Card UI Design */}
+        <div className="weather-container">
+          <div className="row p-2 main">
 
-      </header>
+            {/*Column 1: "Card 1" - displays on the left */}
+            <div className="col-sm-3 p-0">
+              <div className="card p-3 h-100 bg-card-left">
+                <div className="row p-0">
+                  <SearchEngine onSubmit={receiveData}/>
+                   
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+
+      
     </div>
   );
 }
