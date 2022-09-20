@@ -26,6 +26,176 @@
   padding: 5px 10px 5px 40px;
 }
 
+.greeting {
+  text-align: left;
+}
+#date-today {
+  text-align: left;
+  font-size: 14px;
+}
+#time-now {
+  text-align: right;
+  font-size: 14px;
+}
+button {
+  display: inline;
+  max-width: 500;
+  text-align: left;
+}
+#currentLocationBttn {
+  background-color: #fddb3a;
+  margin: 0px;
+  padding: 0px;
+  width: 95%;
+  max-width: 185px;
+}
+
+.myLocationIcon {
+  display: inline;
+  max-width: 23px;
+}
+.card.bg-card-left {
+  background-color: rgba(247, 244, 245, 0.6);
+}
+.just-right {
+  text-align: center;
+}
+
+.just-left {
+  text-align: center;
+}
+.card.bg-card-right {
+  background-color: rgba(247, 244, 245, 0.6);
+}
+
+.card.bg-card-details {
+  background-color: rgba(247, 244, 245, 0.4);
+}
+
+.locationTimeDate {
+  background-color: rgba(247, 244, 245, 0.3);
+  border-radius: 4px;
+  width: 95%;
+  max-width: 190px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 10px;
+}
+.locationTime {
+  font-size: 15px;
+  padding: 1px;
+  margin: 0px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.locationDate {
+  font-size: 15px;
+  padding: 1px;
+  margin: 0px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.location {
+  font-size: 28px;
+  margin: 5px 0px 0px 0px;
+  padding: 1px;
+  font-weight: 500;
+}
+.region {
+  font-size: 23px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
+}
+.country {
+  font-size: 23px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
+}
+.weatherForecast {
+  margin: 0px;
+  padding: 0;
+}
+.temp {
+  margin: 0px;
+  padding: 0px 0px 0px 0px;
+  font-size: 60px;
+  position: relative;
+  right: -20px;
+  font-weight: 500;
+}
+.active {
+  color: black;
+}
+.units {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  right: -22px;
+  top: -30px;
+}
+.weatherStatus {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 500;
+}
+.weatherIcon-main {
+  max-width: 85px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#feelsLike {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#humidity {
+  font-size: 16px;
+  font-weight: bold;
+}
+#windSpeed {
+  font-size: 16px;
+  font-weight: bold;
+}
+#fahrenheit-link {
+  text-decoration: none;
+}
+
+#fahrenheit-link:hover {
+  text-decoration: none;
+}
+#celsius-link {
+  text-decoration: none;
+}
+#celsius-link:hover {
+  text-decoration: none;
+}
+.feelsLikeIcon {
+  max-width: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+.humidityIcon {
+  max-width: 35px;
+  padding: 0px;
+  margin: 0px;
+}
+.windSpeedIcon {
+  max-width: 35px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
