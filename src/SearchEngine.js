@@ -4,6 +4,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import './App.css';
 
 export default function SearchEngine(props){
     //define state variables to be updated
@@ -35,7 +36,8 @@ export default function SearchEngine(props){
     //Search engine form
     let form = (
         <form onSubmit={handleSubmit}>
-            <input type="search" placeholder="Enter a city" onChange={updateCity} autoFocus="on" />       
+            <input type="search" placeholder="Search for a city..." onChange={updateCity} autoFocus="on"
+            id="search-input" />       
         </form>
     );
 
