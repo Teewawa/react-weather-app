@@ -23,7 +23,7 @@ export default function SearchEngine(props){
         let endpoint ="https://api.openweathermap.org/data/2.5/weather"
         let apiUrl = `${endpoint}?q=${city}&appid=${apiKey}&units=${units}`;
         axios.get(apiUrl).then(sendData);
-        {/*Clear our search bar after submit */}
+        //Clear our search bar after submit
         event.target.reset();
     }
 
