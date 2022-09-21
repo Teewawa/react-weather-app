@@ -3,7 +3,8 @@ import './App.css';
 import SearchEngine from "./SearchEngine";
 import DailyForecast from "./DailyForecast";
 import Greeting  from "./Greeting";
-import MyLocation from "./MyLocation";
+import MyLocation from "./MyLocation"
+import HourlyForecast from "./HourlyForecast";
 
 
 function App() {
@@ -47,8 +48,9 @@ function App() {
                     <MyLocation />
                   </div>
                   
+                  
                 </div>
-
+<HourlyForecast />
 
 
                 {/*Card 2, Row 2 (bottom) displays weekly forecast */}
