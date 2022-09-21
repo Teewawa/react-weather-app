@@ -5,6 +5,7 @@ import myLocationIcon from "./images/myLocationIcon.png"
 export default function MyLocation(props){
     return(
         <div className="MyLocation">
+          <br />
             <div className="LocationBttn">
             <button
               type="button"
