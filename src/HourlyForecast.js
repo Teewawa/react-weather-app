@@ -1,11 +1,7 @@
 import React from "react"
 
 export default function hourlyForecast(props){
-    var width100 = { width: "100%" };
-    var width10 = { width: "10%" };
-    var width30 = { width: "30%" };
-    var width1 = { width: "1%" };
-    
+  
     return(
         <div className="hourlyForecast">
             {/*CARD 2 (top) - Hourly Forecast*/}
@@ -17,7 +13,7 @@ export default function hourlyForecast(props){
                 <th>Time</th>
                 <th> Condition</th>
                 <th> Temp</th>
-                <th> Humdity</th>
+                <th> Humidity</th>
                 <th> Wind</th>
               </tr>
             </thead>
@@ -34,7 +30,7 @@ export default function hourlyForecast(props){
                   Partly Cloudy
                 </td>
                 <td className="hourlyTemp">88°</td>
-                <td className="hourlyHumdity">68%</td>
+                <td className="hourlyHumidity">68%</td>
                 <td className="hourlyWindSpeed">12mph</td>
               </tr>
               {/*This is a repeated section that will be later removed
@@ -51,7 +47,7 @@ export default function hourlyForecast(props){
                   Partly Cloudy
                 </td>
                 <td className="hourlyTemp">87°</td>
-                <td className="hourlyHumdity">68%</td>
+                <td className="hourlyHumidity">68%</td>
                 <td className="hourlyWindSpeed">3mph</td>
               </tr>
               {/*This is a repeated section that will be later removed
@@ -68,7 +64,7 @@ export default function hourlyForecast(props){
                   Partly Cloudy
                 </td>
                 <td className="hourlyTemp">87°</td>
-                <td className="hourlyHumdity">68%</td>
+                <td className="hourlyHumidity">68%</td>
                 <td className="hourlyWindSpeed">3mph</td>
               </tr>
               {/*This is a repeated section that will be later removed
@@ -85,7 +81,7 @@ export default function hourlyForecast(props){
                   Partly Cloudy
                 </td>
                 <td className="hourlyTemp">87°</td>
-                <td className="hourlyHumdity">68%</td>
+                <td className="hourlyHumidity">68%</td>
                 <td className="hourlyWindSpeed">3mph</td>
               </tr>
               {/*This is a repeated section that will be later removed
@@ -102,7 +98,7 @@ export default function hourlyForecast(props){
                   Partly Cloudy
                 </td>
                 <td className="hourlyTemp">87°</td>
-                <td className="hourlyHumdity">68%</td>
+                <td className="hourlyHumidity">68%</td>
                 <td className="hourlyWindSpeed">3mph</td>
               </tr>
               {/*This is a repeated section that will be later removed
@@ -119,7 +115,7 @@ export default function hourlyForecast(props){
                   Partly Cloudy
                 </td>
                 <td className="hourlyTemp">87°</td>
-                <td className="hourlyHumdity">68%</td>
+                <td className="hourlyHumidity">68%</td>
                 <td className="hourlyWindSpeed">3mph</td>
               </tr>
             </tbody>
