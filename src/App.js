@@ -6,6 +6,7 @@ import Greeting  from "./Greeting";
 import MyLocation from "./MyLocation"
 import HourlyForecast from "./HourlyForecast";
 import WeeklyForecast from "./WeeklyForecast";
+import Credits from "./Credits";
 
 
 export default function App() {
@@ -53,9 +54,9 @@ export default function App() {
 
                 {/*Card 2, Row 2 (bottom) displays weekly forecast */}
                   <WeeklyForecast />
-
               </div>
             </div>
+            <Credits />
 
             {/*closing tag for row, weather-container, and app (root) div */}
           </div>
