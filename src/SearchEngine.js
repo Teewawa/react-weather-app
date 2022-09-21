@@ -9,12 +9,10 @@ import './App.css';
 export default function SearchEngine(props){
     //define state variables to be updated
     let [city, setCity] = useState("");
-    let [loaded, setLoaded] = useState(false);
 
     //Receives api response and sends to App.js
     function sendData(response){
         props.onSubmit(response);
-        setLoaded(true);
     }
 
     //Search for city data through api query
