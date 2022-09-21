@@ -191,42 +191,93 @@ button {
   margin: 0px;
 }
 
-
-
-
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greetingWrapper {
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+#date-today {
+  font-size: 16px;
+}
+#time-now {
+  font-size: 16px;
+}
+.greeting {
+  font-size: 33px;
+  padding: 0px;
+  margin: 0px;
+}
+.greetingIcon {
+  max-width: 45px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: -10px;
+}
+.weatherIcon {
+  font-size: 35px;
+  margin: 1px;
+  padding: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+  padding: 2px;
+  margin: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.hourly-Forecast {
+  font-size: 16px;
+}
+.hourly-icon {
+  max-width: 30px;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+}
+
+.hourlyDescription {
+  text-align: center;
+}
+.conditionHeader {
+  text-align: center;
+}
+
+.tempHeader {
+  text-align: left;
+}
+
+.forecast-date {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.forecast-icon {
+  max-width: 60px;
+  padding: 0px;
+  margin: 0px auto;
+}
+
+.forecast-max-temp {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.forecast-min-temp {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.credit-line {
+  color: white;
+  background-color: #9292925b;
+}
+.src-link {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Credits {
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
