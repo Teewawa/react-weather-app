@@ -7,7 +7,8 @@ import windSpeed from "./images/windSpeed.png";
 export default function DailyForecast(props){
     return(
         <div className="DailyForecast">
-                 {/*Get the current date & time of user's location*/}
+        
+        {/*Get the current date & time of user's location*/}
         <div className="locationTimeDate">
           <span className="locationDate" id="location-Date">
             Thur, Sept 01, 2022{" "}
@@ -16,6 +17,7 @@ export default function DailyForecast(props){
             12:30PM
           </span>
         </div>
+
         {/*Display the City, Region, Country*/}
         <span>
           <h1 className="location" id="location">
@@ -28,6 +30,7 @@ export default function DailyForecast(props){
             GU
           </span>
         </span>
+
         {/*Display the current temperature*/}
         <div className="weatherForecast">
           <span className="temp" id="temperature">
@@ -44,8 +47,8 @@ export default function DailyForecast(props){
               °F
             </a>
           </small>
-
           <br />
+
           {/*Display the current weather condition/status*/}
           <div className="weatherStatus">Clear Sky</div>
           <div className="weatherStatus"></div>
