@@ -5,9 +5,10 @@ import DailyForecast from "./DailyForecast";
 import Greeting  from "./Greeting";
 import MyLocation from "./MyLocation"
 import HourlyForecast from "./HourlyForecast";
+import WeeklyForecast from "./WeeklyForecast";
 
 
-function App() {
+export default function App() {
   let [data, setData] = useState(null);
 
   //Receives weather data
@@ -46,15 +47,12 @@ function App() {
                   </div>
                   <div className="col-sm-4 p-0">
                     <MyLocation />
-                  </div>
-                  
-                  
+                  </div>                
                 </div>
-<HourlyForecast />
-
+                <HourlyForecast />
 
                 {/*Card 2, Row 2 (bottom) displays weekly forecast */}
-   
+                  <WeeklyForecast />
 
               </div>
             </div>
@@ -65,5 +63,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
