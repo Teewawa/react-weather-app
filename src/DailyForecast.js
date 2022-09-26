@@ -1,10 +1,19 @@
 import React from "react";
 import "./App.css";
-import feelsLike from "./images/feelsLikeTemp.png";
-import humidity from "./images/humidity.png";
-import windSpeed from "./images/windSpeed.png";
+import feelsLikeIcon from "./images/feelsLikeTemp.png";
+import humidityIcon from "./images/humidity.png";
+import windSpeedIcon from "./images/windSpeed.png";
 
 export default function DailyForecast(props){
+  let daily = props.forecast;
+  let location = daily.data.name;
+  let country = daily.data.sys.country;
+  let temperature = Math.round(daily.data.main.temp);
+  let weatherStatus = daily.data.weather[0].description;
+  let feelsLike = Math.round(daily.data.main.feels_like);
+  let humidity = daily.data.main.humidity;
+  let windSpeed = Math.round(daily.data.wind.speed * 3.6);
+  
     return(
         <div className="DailyForecast">
         
@@ -21,20 +30,20 @@ export default function DailyForecast(props){
         {/*Display the City, Region, Country*/}
         <span>
           <h1 className="location" id="location">
-            Hagåtña
+            {location}
           </h1>
           <span className="region" id="region">
             Guam,
           </span>
           <span className="country" id="country">
-            GU
+            {country}
           </span>
         </span>
 
         {/*Display the current temperature*/}
         <div className="weatherForecast">
           <span className="temp" id="temperature">
-            25
+            {temperature}
           </span>
 
           {/*Display the Units: C | F*/}
@@ -50,7 +59,7 @@ export default function DailyForecast(props){
           <br />
 
           {/*Display the current weather condition/status*/}
-          <div className="weatherStatus">Clear Sky</div>
+          <div className="weatherStatus">{weatherStatus}</div>
           <div className="weatherStatus"></div>
           <img
             src="../images/dustSand.png"
@@ -63,25 +72,25 @@ export default function DailyForecast(props){
         {/*Display Feels like Temp*/}
         <div className="row p-0 mt-2">
           <div className="col p-0 just-left">
-            <img src={feelsLike} className="feelsLikeIcon" alt="thermostat" />
-            Feels like: <span id="feelsLike">27 °C</span>
+            <img src={feelsLikeIcon} className="feelsLikeIcon" alt="thermostat" />
+            Feels like: <span id="feelsLike">{feelsLike} °C</span>
           </div>
         </div>
 
         <div className="row p-0">
           <div className="col p-0 just-left">
-            <img src={humidity} className="humidityIcon" alt="humidity icon" />
-            Humidity: <span id="humidity">96%</span>
+            <img src={humidityIcon} className="humidityIcon" alt="humidity icon" />
+            Humidity: <span id="humidity">{humidity}%</span>
           </div>
         </div>
         <div className="row p-0">
           <div className="col p-0 just-left">
             <img
-              src={windSpeed}
+              src={windSpeedIcon}
               className="windSpeedIcon"
               alt="wind speed icon"
             />
-            Wind: <span id="windSpeed">0 km/h</span>
+            Wind: <span id="windSpeed">{windSpeed} km/h</span>
           </div>
         </div>
 
